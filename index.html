@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecruitmentTask</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main class="containerApp">
+      <section class="stepOneSection">
+        <div class="headerContainer">
+          <h1 class="header">Envelo</h1>
+        </div>
+        <div class="paragraphContainer">
+          <p class="info-paragraph">
+            Możesz mieć swoją przesyłkę w kilkanaście sekund. Rozpocznij
+            klikając w przycisk.
+          </p>
+        </div>
+        <div class="buttonContainer">
+          <button class="pickUpButton">Odbierz przesyłkę</button>
+        </div>
+      </section>
+      <section class="stepTwoSection">
+        <div class="headerContainer">
+          <h1 class="header">Envelo</h1>
+        </div>
+
+        <div class="paragraphContainer">
+          <p class="info-paragraphSecodary">
+            Uzupełnij dane i potwierdź klikając przycisk poniżej
+          </p>
+        </div>
+
+        <div class="numberAndCodeContainer">
+          <form class="formValidation" action="/">
+            <label class="numberContainer"
+              >Numer telefonu
+              <input
+                class="numberInput"
+                type="tel"
+                pattern="[0-9]{9}"
+                placeholder="Tel number"
+                maxlength="14"
+                minlength="8"
+              />
+            </label>
+            <p class="warningNumber"></p>
+            <label class="codeContainer">
+              Kod odbioru
+              <input
+                class="codeInput"
+                type="number"
+                placeholder="Your code"
+                minlength="3"
+                maxlength="5"
+              />
+            </label>
+            <p class="warningCode"></p>
+            <!-- <button class="pickUpButtonSecondary" type="submit">Odbierz przesyłkę</button> -->
+            <button class="pickUpButtonSecondary" type="submit">
+              Odbierz przesyłkę
+            </button>
+          </form>
+          <!-- <button class="pickUpButtonSecondary" type="submit">Odbierz przesyłkę</button> -->
+        </div>
+      </section>
+      <section class="loaderContainer">
+        <div class="fakeLoader"></div>
+      </section>
+      <div class="modalContainerBackground">
+        <div class="modalContainer">
+          <div class="modalHeaderContainer">
+            <h1 class="modalHeader">Paczka odebrana</h1>
+          </div>
+          <div class="modalInfoContainer">
+            <p class="modalInfo"></p>
+          </div>
+
+          <div class="modalButtonsContainerFlex">
+            <button class="modalButtonEnd">To wszystko na dziś</button>
+            <button class="modalButtonContinue">Odbierz kolejną paczkę</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script type="module" src="./app/App.js"></script>
+</html>

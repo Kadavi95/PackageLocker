@@ -31,12 +31,10 @@ let timer;
 function setTimer() {
   timer = setInterval(() => {
     secondsCounter++;
-    // console.log(secondsCounter);
   }, 1000);
 }
 function clearTimer() {
   resultTime = secondsCounter;
-  // console.log(resultTime);
   clearInterval(timer);
 }
 

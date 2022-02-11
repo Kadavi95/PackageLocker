@@ -4,4 +4,5 @@ export function jumpToNext(setTimer) {
   const stepTwoSection = document.querySelector(".stepTwoSection");
   stepOneSection.style.display = "none";
   stepTwoSection.style.display = "flex";
+
 }

@@ -23,6 +23,7 @@ body {
   --loader-height: 60px;
   --loader-color_primary: red;
   --loader-color_secondary: white;
+  --paragraph-line_height: 1.5rem;
 }
 .containerApp {
   height: 100%;
@@ -73,6 +74,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .paragraphContainer{
+    width: 70%;
+  }
+}
 .buttonContainer {
   height: 40%;
   display: flex;
@@ -85,6 +91,7 @@ body {
   color: var(--paragraph-color);
   font-size: var(--font-paragraph);
   text-align: center;
+  line-height: var(--paragraph-line_height);
 }
 .info-paragraphSecodary {
   color: var(--paragraph-color);
